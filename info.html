@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--
+        Fit for Fun Fitness Club
+        Author: Dustin Fischer
+        Date:   6/28/2021
+
+        Filename: info.html
+       -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fit for Fun Fitness club | Info</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Fit for Fun Fitness Club</h1>
+      <img src="logo.png" alt="Fit for Fun!" style="height:250px;">
+      <br>
+      <nav>
+        <ul>
+          <li><a href="index.html">| Home |</a></li>
+          <li><a href="classes.html">| Class Schedule |</a></li>
+          <li><a href="info.html">| Request Info |</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2>Ready to sign up? Use the form below!</h2>
+
+    <div class="signup">
+      <form method="get" action="thankyou.html">
+        <fieldset class="contactinformation">
+            <legend>Contact Information</legend>
+          <label for="fname">
+            Name:
+            <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+          </label>
+          <label for="lname">
+            Last Name:
+            <input type="text" name="lname" id="lname" required placeholder="Last Name">
+          </label> <br>
+          <label for="phone">
+            Phone:
+            <input type="tel" name="phone" id="phone" required placeholder="123-456-7890">
+          </label>
+          <label for="email">
+            Email:
+            <input type="email" name="email" id="email" required placeholder="Email@example.com">
+          </label> <br>
+          <label for="contactmethod">
+            Preferred Method of Contact:
+            <select name="contactmethod" id="contactmethod">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="owl">Messenger Owl</option>
+              <option value="astral">Astral Communication</option>
+            </select>
+          </label>
+      </fieldset>
+
+      <fieldset class="ClassesOffered">
+        <legend>Classes You Are Interested In:</legend>
+          <input type="checkbox" name="cross"> Cross Training
+          <input type="checkbox" name="sprint"> Sprint
+          <input type="checkbox" name="spin"> Spin
+          <input type="checkbox" name="BodyPump"> BodyPump
+          <input type="checkbox" name="BodyCombat"> BodyCombat
+          <br>
+          <input type="checkbox" name="StepInerval"> Step Interval
+          <input type="checkbox" name="AdvCross"> Advanced Cross Training
+          <input type="checkbox" name="Mixxed"> MixxedFIT
+          <input type="checkbox" name="zumba"> Zumba
+          <br>
+          <input type="radio" name="ampm" value="AM"> AM
+          <input type="radio" name="ampm" value="PM"> PM
+      </fieldset>
+
+      <fieldset class="additional">
+        <legend>Additional Info</legend>
+          <textarea name="extraInfo" rows="4" cols="50" placeholder="Any comments or questions?"></textarea>
+      </fieldset> <br>
+
+      <input type="submit" value="Submit">
+      </form>
+
+
+    </div>
+
+    <footer>
+      Fit for Fun Fitness : 123 North Street, Daytona, FL : 123-456-7890
+    </footer>
+
+
+
+  </body>
